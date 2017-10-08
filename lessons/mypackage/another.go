@@ -18,5 +18,4 @@ func My() {
 	fmt.Println("From My another printing")
 	fmt.Printf("%T what?? \n", myBol)
 	fmt.Printf("%v what?? \n", myBol)
-
 }
