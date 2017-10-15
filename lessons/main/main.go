@@ -5,7 +5,6 @@ import (
 	"log"
 	"github.com/AlexeiVainshtein/udemy/lessons/mypackage"
 	"github.com/AlexeiVainshtein/udemy/lessons/scope"
-
 )
 
 func main() {
@@ -30,31 +29,21 @@ func main() {
 	fmt.Println(mypackage.Bool())
 	mypackage.My()
 	mypackage.Test()
+	{
+		fmt.Println("Inner scope")
+	}
+
+	funcExpression := func () int {
+		const name= iota
+		return name
+	}
+
+	fmt.Println(funcExpression())
 	st := mypackage.TestVar
 	fmt.Println(st)
 	fmt.Println("################")
 	fmt.Println("Scopes")
 	fmt.Println(scope.MyFanc())
 	fmt.Println(scope.Bool())
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	scope.Blank()
 }
