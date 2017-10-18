@@ -5,6 +5,7 @@ import (
 	"log"
 	"github.com/AlexeiVainshtein/udemy/lessons/mypackage"
 	"github.com/AlexeiVainshtein/udemy/lessons/scope"
+	"github.com/AlexeiVainshtein/udemy/lessons/constant"
 )
 
 func main() {
@@ -46,4 +47,10 @@ func main() {
 	fmt.Println(scope.MyFanc())
 	fmt.Println(scope.Bool())
 	scope.Blank()
+	fmt.Println("################")
+	fmt.Println("################")
+	fmt.Println("Constants:")
+	constant.PrintConstant()
+	fmt.Println("################")
+
 }
